@@ -81,15 +81,15 @@ for (let i = 0; i < cookiesArr.length; i++) {
   let code = $.newShareCodes[0];
   await help(code[0], code[1]);
   }
-  if (helpAuthor && $.authorCode) {
-  console.log(`\n【抢京豆】${$.UserName} 去帮助作者`)
-  for (let code of $.authorCode) {
-  const helpRes = await help(code.shareCode, code.groupCode);
-           if (helpRes && helpRes.data.respCode === 'SG209') {
-           break;
-         }
-         }
-       }
+  //  if (helpAuthor && $.authorCode) {
+//  console.log(`\n【抢京豆】${$.UserName} 去帮助作者`)
+//  for (let code of $.authorCode) {
+ // const helpRes = await help(code.shareCode, code.groupCode);
+   //        if (helpRes && helpRes.data.respCode === 'SG209') {
+    //       break;
+     //    }
+      //   }
+      // }
        if (helpAuthor && $.authorCode2) {
          for (let code of $.authorCode2) {
            const helpRes = await help(code.shareCode, code.groupCode);
