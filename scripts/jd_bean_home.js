@@ -76,8 +76,8 @@ for (let i = 0; i < cookiesArr.length; i++) {
   cookie = cookiesArr[i];
   if ($.newShareCodes.length > 1) {
   console.log(`\n【抢京豆】 ${$.UserName} 去助力排名第一的cookie`);
-  let code = $.newShareCodes[(i + 1) % $.newShareCodes.length]
-  await help(code[0], code[1])
+   // let code = $.newShareCodes[(i + 1) % $.newShareCodes.length]
+  // await help(code[0], code[1])
   let code = $.newShareCodes[0];
   await help(code[0], code[1]);
   }
